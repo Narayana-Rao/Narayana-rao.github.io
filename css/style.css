@@ -383,8 +383,8 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
-  padding-top: 4em;
-  padding-bottom: 9em;
+  padding-top: 2em;
+  padding-bottom: 3em;
   clear: both;
   width: 100%;
   display: block; }
@@ -397,8 +397,8 @@ body.offcanvas {
     .colorlib-about,
     .colorlib-services,
     .colorlib-contact {
-      padding-top: 5em;
-      padding-bottom: 8em; } }
+      padding-top: 2em;
+      padding-bottom: 2em; } }
 
 .author-img {
   background-size: cover;
@@ -408,7 +408,7 @@ body.offcanvas {
 
 .colorlib-heading {
   font-size: 18px;
-  margin-bottom: 4em;
+  margin-bottom: 0.5em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -418,7 +418,7 @@ body.offcanvas {
     display: block; }
   @media screen and (max-width: 768px) {
     .colorlib-heading {
-      margin-bottom: 3em; } }
+      margin-bottom: 0.5em; } }
 
 .heading-meta {
   margin-bottom: 15px;
@@ -725,11 +725,11 @@ body.offcanvas {
     .services.color-5 .icon:after {
       border-color: #2fa499 transparent transparent transparent; }
   .services.color-6 .icon {
-    background: #4054b2; }
+    background: #2EE3F9; }
     .services.color-6 .icon:before {
-      border-color: transparent transparent #4054b2 transparent; }
+      border-color: transparent transparent #2EE3F9 transparent; }
     .services.color-6 .icon:after {
-      border-color: #4054b2 transparent transparent transparent; }
+      border-color: #2EE3F9 transparent transparent transparent; }
 
 .progress-wrap h3 {
   font-size: 16px;

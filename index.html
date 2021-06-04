@@ -27,7 +27,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/custom.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- =======================================================
   * Template Name: Personal - v4.2.0
   * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
@@ -174,16 +174,28 @@
 
      <div class="row skills-content">
 
-        <div class="col-lg-3 col-md-6"> <img src="assets/docs/certificates/GRSS_2021.png" class="img-fluid" alt="">
+        <div class="col-lg-3 col-md-6"> 
+          <img src="assets/docs/certificates/GRSS_2021.png" style="width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="w3-hover-opacity">
       			GRSS Expert lecture-2021
         </div>
 
-        <div class="col-lg-3 col-md-6"> <img src="assets/docs/certificates/APSART_2021.png" class="img-fluid" alt="">
+        <div class="col-lg-3 col-md-6"> 
+          <img src="assets/docs/certificates/APSART_2021.png" style="width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="w3-hover-opacity">
             APSAR 2021 Tutorial 
         </div>
 
-        <div class="col-lg-3 col-md-6"> <img src="assets/docs/certificates/PolInSART_2021.png" class="img-fluid" alt="">
+        <div class="col-lg-3 col-md-6"> 
+          <img src="assets/docs/certificates/PolInSART_2021.png" alt="" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
             PolInSAR 2021 Tutorial
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <img src="assets/docs/certificates/NPTEL_2017.jpeg" style="width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="w3-hover-opacity">
+            NPTEL-2017
         </div>
 
 
@@ -876,6 +888,18 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100% ">
+  </div>
+</div>
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
 </body>
 
 </html>

@@ -29,6 +29,12 @@
   <link href="assets/css/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <link rel="stylesheet" href="assets/css/map_.css">
+
 </head>
 
 <body>
@@ -619,7 +625,7 @@
               .tg .tg-7803{color:#ffffff;text-align:left;vertical-align:top}
               .tg .tg-my85{border-color:#000000;color:#ffffff;text-align:right;vertical-align:top}
               </style>
-              <table class="tg" style="undefined;table-layout: fixed; width: 300px">
+              <table class="tg" style="undefined;table-layout: auto; width: 300px">
               <colgroup>
               <col style="width: 150px">
               <col style="width: 114px">
@@ -655,7 +661,7 @@
           <canvas id="myChart" width="250" height="100"></canvas>
         </div>
       </div>
-      
+     
       <br><br><br>
 
       <div class="row">
@@ -815,6 +821,9 @@
         </div>
 
       </div>
+      <div class="row">
+  <div id="map"></div>
+</div> 
 
     </div>
   </section><!-- End Portfolio Section -->
@@ -901,6 +910,18 @@
   <script type="text/javascript" src="assets/js/chart.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<!-- <script src="./data/line.js"></script> -->
+<!-- <script src="./data/point.js"></script> -->
+<!-- <script src="./data/polygon.js"></script> -->
+<!-- <script src="./data/nepaldata.js"></script> -->
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<!-- <script src="./data/usstates.js"></script> -->
+<script src="assets/js/map_.js"></script>
+
+
+
 
 <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
   <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>

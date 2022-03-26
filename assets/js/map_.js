@@ -2,7 +2,7 @@
                       OSM  LAYER               
 ===================================================*/
 
-    var map = L.map('map').setView([0,0], 1);
+    var map = L.map('map').setView([3,35], 1.);
 var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     className:'map-tiles'
@@ -10,13 +10,38 @@ var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 osm.addTo(map);
 
 /*===================================================
-                      MARKER               
+                      MARKERS               
 ===================================================*/
 
-var singleMarker = L.marker([28.25255,83.97669]);
-singleMarker.addTo(map);
-var popup = singleMarker.bindPopup('This is a popup')
-popup.addTo(map);
+var pt1 = L.marker([19.132128384618802, 72.91782170419445]);
+pt1.addTo(map);
+var popup1 = pt1.bindPopup('MRSLab, IIT Bombay')
+popup1.addTo(map);
+
+var pt2 = L.marker([23.027946334038724, 72.51889522482324]);
+pt2.addTo(map);
+var popup2 = pt2.bindPopup('SAC-ISRO, Ahmedabad')
+popup2.addTo(map);
+
+var pt3 = L.marker([45.3947464948016, -75.71439439784899]).addTo(map);
+pt3.bindPopup('AAFC-Canada').addTo(map);
+
+var pt4 = L.marker([41.3893801672304, 2.116212166590115]).addTo(map);
+pt4.bindPopup('Barcelona Tech - UPC, Spain').addTo(map);
+
+var pt5 = L.marker([17.98377810459607, 79.53066693604285]).addTo(map);
+pt5.bindPopup('NIT Warangal').addTo(map);
+
+var pt6 = L.marker([12.918932648990973, 77.61064763160826]).addTo(map);
+pt6.bindPopup('CropIn Technology Solutions').addTo(map);
+
+var pt7 = L.marker([45.63154416649742, -73.38168942617135]).addTo(map);
+pt7.bindPopup('INRS-Quebec, Canada').addTo(map);
+
+var pt8 = L.marker([38.38543800558585, -0.5140907966191396]).addTo(map);
+pt8.bindPopup('University of Alicante, Spain').addTo(map);
+
+
 
 /*===================================================
                      TILE LAYER               
@@ -84,7 +109,7 @@ var baseLayers = {
 };
 
 var overlays = {
-    "Marker": singleMarker,
+    "Marker": pt1,
     // "PointData":pointdata,
     // "LineData":linedata,
     // "PolygonData":polygondata

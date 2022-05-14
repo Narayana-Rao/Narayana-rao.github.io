@@ -26,6 +26,10 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
+
+/*  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;*/
 }
 
 @media (min-width: 1024px) {
@@ -1163,4 +1167,21 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
+
+
+#particles-js {
+  background-color: #000000;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#overlay {
+  position: relative;
+  padding: 50px;
 }

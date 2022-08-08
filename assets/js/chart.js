@@ -39,7 +39,7 @@ var myChart = new Chart(ctx, {
         labels: [" ", " ", "2020", "2021", "2022"],
         datasets: [{
             label: '# citations',
-            data: [0,0, 3, 29, 29],
+            data: [0,0, 3, 29, 31],
             backgroundColor: [
                 // 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',

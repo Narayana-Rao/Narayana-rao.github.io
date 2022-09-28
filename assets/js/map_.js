@@ -41,6 +41,15 @@ pt7.bindPopup('INRS-Quebec, Canada').addTo(map);
 var pt8 = L.marker([38.38543800558585, -0.5140907966191396]).addTo(map);
 pt8.bindPopup('University of Alicante, Spain').addTo(map);
 
+var pt9 = L.marker([42.386741, -72.530051]).addTo(map);
+pt9.bindPopup('University of Massachusetts Amherst').addTo(map);
+
+var pt10 = L.marker([38.986894, -76.942573]).addTo(map);
+pt10.bindPopup('University of Maryland').addTo(map);
+
+var pt10 = L.marker([38.831209, -77.311747]).addTo(map);
+pt10.bindPopup('George Mason University').addTo(map);
+
 
 
 /*===================================================

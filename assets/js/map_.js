@@ -50,6 +50,12 @@ pt10.bindPopup('University of Maryland').addTo(map);
 var pt10 = L.marker([38.831209, -77.311747]).addTo(map);
 pt10.bindPopup('George Mason University').addTo(map);
 
+var pt11 = L.marker([22.314716, 87.310748]).addTo(map);
+pt11.bindPopup('IIT Kharagpur').addTo(map);
+
+var pt12 = L.marker([48.085479, 11.279480]).addTo(map);
+pt12.bindPopup('German Aerospace Center (DLR)').addTo(map);
+
 
 
 /*===================================================

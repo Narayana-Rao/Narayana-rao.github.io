@@ -56,6 +56,9 @@ pt11.bindPopup('IIT Kharagpur').addTo(map);
 var pt12 = L.marker([48.085479, 11.279480]).addTo(map);
 pt12.bindPopup('German Aerospace Center (DLR)').addTo(map);
 
+var pt13 = L.marker([34.201250, -118.171351]).addTo(map);
+pt13.bindPopup('Jet Propulsion Laboratory (JPL, CalTech)').addTo(map);
+
 
 
 /*===================================================

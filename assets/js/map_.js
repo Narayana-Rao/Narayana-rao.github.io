@@ -59,6 +59,8 @@ pt12.bindPopup('German Aerospace Center (DLR)').addTo(map);
 var pt13 = L.marker([34.201250, -118.171351]).addTo(map);
 pt13.bindPopup('Jet Propulsion Laboratory (JPL, CalTech)').addTo(map);
 
+var pt14 = L.marker([39.025424, -76.923921]).addTo(map);
+pt14.bindPopup('USDA-ARS Hydrology and Remote Sensing Laboratory').addTo(map);
 
 
 /*===================================================

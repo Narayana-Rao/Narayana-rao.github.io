@@ -34,7 +34,22 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
   <link rel="stylesheet" href="assets/css/map_.css">
+  <!-- jQuery -->
+<!--   <script  type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link    href="assets/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <script  type="text/javascript" src="assets/js/jquery.nanogallery2.min.js"></script> -->
 
+  <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.21.8/babel.js"></script>
+
+  <script src="https://unpkg.com/three@0.152.2/build/three.js"></script>
+  <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+
+  <script src="https://unpkg.com/react-globe.gl@2.24.1/dist/react-globe.gl.min.js"></script>
+  <!--<script src="../../dist/react-globe.gl.js"></script>-->
+
+  
 </head>
 
 <body>
@@ -270,6 +285,8 @@
 
 
       </div>
+
+
 
     </div><!-- End Skills -->
 
@@ -884,7 +901,41 @@
       <div class="row">
         <div id="map"></div>
       </div> 
+      <div class="row">
+      <div id="globeViz"></div>
 
+      <script type="text/jsx">
+        const { useState, useEffect } = React;
+
+        const polygonsMaterial = new THREE.MeshLambertMaterial({ color: 'darkslategrey', side: THREE.DoubleSide });
+
+        const World = () => {
+          const [landPolygons, setLandPolygons] = useState([]);
+
+          useEffect(() => {
+            // load data
+            fetch('https://narayana-rao.github.io/assets/js/land-110m.json').then(res => res.json())
+              .then(landTopo => {
+                setLandPolygons(topojson.feature(landTopo, landTopo.objects.land).features);
+              });
+          }, []);
+
+          return <Globe
+            backgroundColor="rgba(255,255,255,0)"
+            showGlobe={false}
+            showAtmosphere={false}
+            polygonsData={landPolygons}
+            polygonCapMaterial={polygonsMaterial}
+            polygonSideColor={() => 'rgba(0, 0, 0, 0)'}
+          />;
+        };
+
+        ReactDOM.render(
+          <World />,
+          document.getElementById('globeViz')
+        );
+      </script>
+    </div>
     </div>
   </section><!-- End Portfolio Section -->
 

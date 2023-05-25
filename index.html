@@ -901,10 +901,10 @@
       <div class="row">
         <div id="map"></div>
       </div> 
-      <div class="row">
-      <div id="globeViz"></div>
+      <div class="row" align=center>
+      <div id="globeViz" align=center></div>
 
-      <script type="text/jsx">
+       <script type="text/jsx">
         const { useState, useEffect } = React;
 
         const polygonsMaterial = new THREE.MeshLambertMaterial({ color: 'darkslategrey', side: THREE.DoubleSide });
@@ -934,7 +934,7 @@
           <World />,
           document.getElementById('globeViz')
         );
-      </script>
+      </script> 
     </div>
     </div>
   </section><!-- End Portfolio Section -->
@@ -1032,6 +1032,7 @@
 <!-- <script src="assets/js/polygon.js"></script> -->
 <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
 <script src="assets/js/map_.js"></script>
+<!-- <script type="text/jsx" src="assets/js/globe.jsx"></script> -->
 
 <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
   <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>

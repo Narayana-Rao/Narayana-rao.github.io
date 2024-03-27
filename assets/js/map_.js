@@ -62,6 +62,9 @@ pt13.bindPopup('Jet Propulsion Laboratory (JPL, CalTech)').addTo(map);
 var pt14 = L.marker([39.025424, -76.923921]).addTo(map);
 pt14.bindPopup('USDA-ARS Hydrology and Remote Sensing Laboratory').addTo(map);
 
+var pt15 = L.marker([47.115799, -88.544807]).addTo(map);
+pt15.bindPopup('Michigan Technological University').addTo(map);
+
 
 /*===================================================
                      TILE LAYER               

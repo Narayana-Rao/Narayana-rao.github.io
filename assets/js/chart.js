@@ -36,10 +36,10 @@ ctx.height = "150px";
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: [" ", "2020", "2021", "2022","2023"],
+        labels: [ "2020", "2021", "2022","2023", "2024"],
         datasets: [{
             label: '# citations',
-            data: [0,4, 30, 67, 84],
+            data: [4, 30, 67, 95, 50],
             backgroundColor: [
                 // 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',

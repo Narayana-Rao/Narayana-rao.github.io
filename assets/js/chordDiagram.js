@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const width = 700,
-          height = 700,
-          maxOuterRadius = Math.min(width, height) * 0.5 - 120;
+    const width = 600,
+          height = 600,
+          maxOuterRadius = Math.min(width, height) * 0.5 - 170;
 
     const chord = d3.chord()
         .padAngle(0.05)
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const authors = data.authors;
 
         const numAuthors = authors.length;
-        const outerRadius = Math.min(maxOuterRadius, numAuthors * 15); // Adjust scale accordingly
-        const innerRadius = outerRadius - 30;
+        const outerRadius = Math.min(maxOuterRadius, numAuthors * 20); // Adjust scale accordingly
+        const innerRadius = outerRadius - 20;
 
         const chords = chord(matrix);
 
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .each(d => { d.angle = (d.startAngle + d.endAngle) / 2; })
             .attr("dy", ".35em")
             .attr("transform", d => {
-                const translateDistance = outerRadius + 10; // Distance from center for text
+                const translateDistance = outerRadius + 5; // Distance from center for text
                 return `
                     rotate(${(d.angle * 180 / Math.PI - 90)})
                     translate(${translateDistance})
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .text(d => {
                 // Adjust name length based on outer radius
                 const name = authors[d.index];
-                const maxLength = Math.floor(outerRadius / 10); // Determine max characters
+                const maxLength = Math.floor(outerRadius / 4); // Determine max characters
                 return name.length > maxLength ? name.slice(0, maxLength) + '...' : name; // Truncate if too long
             })
             .style("font-size", "13px") // Fixed font size
@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Fade effect for hover interaction
         function fade(group, isHovered) {
+            console.log('fade group:', group); // Log the group object
             if (!group || !group.index) {
                 throw new Error("Invalid group object passed to fade function");
             }
@@ -97,7 +98,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
             ribbons
                 .classed("glow", d => isHovered && (d?.source?.index === index || d?.target?.index === index) && index !== 0)
-                .classed("fade", d => isHovered && d?.source?.index !== index && d?.target?.index !== index && d?.source?.index !== group.source.index && d?.target?.index !== group.target.index);
+                // .classed("fade", d => isHovered && d?.source?.index !== index && d?.target?.index !== index && d?.source?.index !== group.source.index && d?.target?.index !== group.target.index);
+                .classed("fade", d => isHovered && d.source.index !== index && d.target.index !== index && d.source.index !== group.source.index && d.target.index !== group.target.index);
+            
+                // Fade out unrelated ribbons
+            // Highlight ribbons connected to the hovered author
+            // ribbons
+                // .classed("glow", d => isHovered && (d.source.index === index || d.target.index === index))
+                // .classed("fade", d => isHovered && !(d.source.index === index || d.target.index === index));
+
 
             svg.selectAll("path")
                 .filter((d, i) => i !== index)

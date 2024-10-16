@@ -11,13 +11,22 @@ def process_bibtex(bibtex_file):
     
     # Extract all authors from the entries
     all_authors = []
+    author_count = {}
+    
     for entry in bib_database.entries:
         if 'author' in entry:
             authors = [author.strip() for author in entry['author'].replace('\n', ' ').split(' and ')]
             all_authors.append(authors)
+            
+            # Update author count
+            for author in authors:
+                if author in author_count:
+                    author_count[author] += 1
+                else:
+                    author_count[author] = 1
     
-    # Create a list of all unique authors
-    unique_authors = sorted(set([author for authors in all_authors for author in authors]))
+    # Create a list of all unique authors sorted by their article count (descending)
+    unique_authors = sorted(author_count.keys(), key=lambda x: author_count[x], reverse=True)
     
     # Initialize a co-authorship matrix
     co_author_matrix = pd.DataFrame(0, index=unique_authors, columns=unique_authors)
@@ -34,7 +43,8 @@ def process_bibtex(bibtex_file):
     # Prepare data for JSON output
     data = {
         "matrix": matrix_list,
-        "authors": unique_authors
+        "authors": unique_authors,
+        "author_counts": author_count  # Optionally include author counts in output
     }
     
     return data

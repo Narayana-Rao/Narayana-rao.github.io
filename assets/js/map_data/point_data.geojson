@@ -1,0 +1,165 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "MRSLab, IIT Bombay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [72.91782170419445, 19.132128384618802]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "SAC-ISRO, Ahmedabad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [72.51889522482324, 23.027946334038724]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "AAFC-Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.71439439784899, 45.3947464948016]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "Barcelona Tech - UPC, Spain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.116212166590115, 41.3893801672304]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "NIT Warangal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [79.53066693604285, 17.98377810459607]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "CropIn Technology Solutions"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.61064763160826, 12.918932648990973]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "INRS-Quebec, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.38168942617135, 45.63154416649742]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "University of Alicante, Spain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.5140907966191396, 38.38543800558585]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "University of Massachusetts Amherst"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.530051, 42.386741]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "University of Maryland"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.942573, 38.986894]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "George Mason University"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.311747, 38.831209]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "IIT Kharagpur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [87.310748, 22.314716]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "German Aerospace Center (DLR)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.279480, 48.085479]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "Jet Propulsion Laboratory (JPL, CalTech)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.171351, 34.201250]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "USDA-ARS Hydrology and Remote Sensing Laboratory"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.923921, 39.025424]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popupContent": "Michigan Technological University"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-88.544807, 47.115799]
+      }
+    }
+  ]
+}

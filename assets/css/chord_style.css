@@ -1,0 +1,22 @@
+#chord-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  text {
+    font-size: 12px;
+    pointer-events: auto; /* Allow interaction with text */
+  }
+  /* Add a slight glow effect */
+  .highlight {
+    opacity: 1 !important;
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.8));
+  }
+  .fade {
+    opacity: 0.1;
+  }
+  /* Ribbons glow effect */
+  .glow {
+    filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.9));
+  }

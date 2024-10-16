@@ -36,6 +36,11 @@
   <link rel="stylesheet" href="assets/css/map_.css">
   <link rel="stylesheet" href="assets/css/gallery_style.css">
   <link rel="stylesheet" href="assets/css/spotlight.min.css">
+  <link rel="stylesheet" href="assets/css/chord_style.css">
+
+
+
+
   <!-- jQuery -->
 <!--   <script  type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link    href="assets/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
@@ -53,7 +58,9 @@
 
   <script src="assets/js/spotlight.min.js"></script>
 
-  
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="assets/js/chordDiagram.js" defer></script> 
+
 </head>
 
 <body>
@@ -677,10 +684,21 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Publications</h2>
-        <p>Cited by</p>
+        <h2>Co-author network</h2>
+        <!-- <p>Cited by</p> -->
       </div>
 
+      <div class="row">
+        <!-- <div class="col-sm-6"> -->
+
+          <div  id="chord-diagram"></div>
+
+      </div> 
+      <br><br><br>
+      <div class="section-title">
+        <h2>Citations</h2>
+        <!-- <p>Cited by</p> -->
+      </div>
       <div class="row">
         <div class="col-sm-6">
           <style type="text/css">
@@ -695,7 +713,7 @@
               .tg .tg-ei2i{border-color:#000000;color:#ffffff;text-align:left;vertical-align:top}
               .tg .tg-7803{color:#ffffff;text-align:left;vertical-align:top}
               .tg .tg-my85{border-color:#000000;color:#ffffff;text-align:right;vertical-align:top}
-              </style>
+          </style>
               <table class="tg" align="center" style="table-layout: auto; width: 300px;margin: 0px auto;">
               <colgroup>
               <col style="width: 150px">
@@ -726,14 +744,19 @@
                   <td class="tg-my85">8</td>
                 </tr>
               </tbody>
-              </table>
-        </div>
-        <div class="col-sm-6" >
-          <!-- <canvas id="myChart"  align="center" width="250" height="100"></canvas> -->
+              </table
+            </div>
+          </div>
+
+         <div class="col-sm-6" >
           <canvas id="myChart"  align="center" style=" width: 250px; margin: 0px auto;"></canvas>
-        </div>
+        </div> 
       </div>
-     
+      
+
+
+    <!-- <div id="chord-diagram"></div> -->
+
       <br><br><br>
 
       <div class="row">
@@ -928,7 +951,7 @@
       </div>
 
       <div class="section-title">
-        <h2>Co-author network</h2>
+        <h2>Collaborations</h2>
       </div>
       <div class="row">
         <div id="map"></div>
@@ -1143,6 +1166,8 @@
 
   <script src="assets/js/particles.js"></script>
   <script src="assets/js/app.js"></script>
+
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

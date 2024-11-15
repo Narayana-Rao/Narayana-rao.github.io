@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
@@ -171,79 +172,73 @@
     <div class="interests container">
 
       <div class="section-title">
-        <h2>Fellowships, Grants  &amp;  Awards  </h2>
+        <h2>Awards, Fellowships, &amp; Grants      </h2>
       </div>
 
-      <div class="row">	  
-
-        <table class="tg">
-        <thead>
-          <tr>
-            <th class="tg-l1ar"><span style="font-style:normal;text-decoration:none">Name of award</span></th>
-            <th class="tg-l1ar"><span style="font-style:normal;text-decoration:none">Description</span></th>
-            <th class="tg-l1ar"><span style="font-style:normal;text-decoration:none">Year</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="tg-syad">Naik and Rastogi Excellence in Ph. D. Thesis Award</td>
-            <td class="tg-syad"><span style="font-weight:400;font-style:normal;text-decoration:none">This prestigious award is given to Ph.D. Candidates for outstanding research carried out as part of their doctoral work at IIT Bombay. </td>
-            <td class="tg-4f0n">August 2024 </span></td>
-          </tr>
-          <tr>
-            <td class="tg-syad">IEEE Mikio Takagi Student Prize (MTStP)</td>
-            <td class="tg-syad"><span style="font-weight:400;font-style:normal;text-decoration:none">This prestigious award is given to a student who has presented an outstanding paper at the IEEE Geoscience and Remote Sensing Symposium (IGARSS). </td>
-            <td class="tg-4f0n">July 2022 </span></td>
-          </tr>
-
-          <tr>
-            <td class="tg-syad">IEEE GRSS Travel Grant</td>
-            <td class="tg-syad"><span style="font-weight:400;font-style:normal;text-decoration:none">This grant is awarded by IEEE GRSS society to support the travel for participating in the IEEE Geoscience and Remote Sensing Symposium (IGARSS). </td>
-            <td class="tg-4f0n">July 2022 </span></td>
-          </tr>
-
-          <tr>
-            <td class="tg-syad">Visiting scholar Fellowship</td>
-            <td class="tg-syad"><span style="font-weight:400;font-style:normal;text-decoration:none">This competitive fellowship award is provided by the <a href="https://www.umass.edu/">University of Massachusetts Amherst,</a>  United States. </td>
-            <td class="tg-4f0n">Jan 2022 - </span>Present</td>
-          </tr>
-
-          <tr>
-            <td class="tg-syad">Fulbright-Nehru Doctoral Research Fellowship</td>
-            <td class="tg-syad"><span style="font-weight:400;font-style:normal;text-decoration:none">This competitive fellowship award is provided by United States – India Educational Foundation (USIEF). </td>
-            <td class="tg-4f0n">2022</span></td>
-          </tr>
-
-          <tr>
-            <td class="tg-syad">Earth Observation Fellowship</td>
-            <td class="tg-syad"><span style="font-weight:400;font-style:normal;text-decoration:none">This competitive fellowship award is provided by the <a href="https://www.cropin.com/">CropIn Technology Solutions Pvt. Ltd.</a>  India. </td>
-            <td class="tg-4f0n">July 2021 - Dec 2021<br></td>
-          </tr>
-
-          <tr>
-            <td class="tg-syad">Shortlisted as EO-browser Custom script contest 2019</td>
-            <td class="tg-syad"><span style="font-weight:400;font-style:normal;text-decoration:none">Sentinel-hub and the Copernicus EU Earth </span>Observation programme and the European Space Agency organized <a href="https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-1/soil_moisture_estimation/">EO-browser custom script contest</a> for globally scripting hackathon</td>
-            <td class="tg-4f0n">2020<br></td>
-          </tr>
-          <tr>
-            <td class="tg-syad">Ph.D. Assistantship</td>
-            <td class="tg-syad"><span style="font-weight:400;font-style:normal;text-decoration:none">This competitive fellowship award is provided by </span>the Ministry of Human Resource Development, Government of India.</td>
-            <td class="tg-4f0n"><span style="font-weight:400;font-style:normal;text-decoration:none">2019 - </span>Present</td>
-          </tr>
-          <tr>
-            <td class="tg-syad">M.Tech Assistantship</td>
-            <td class="tg-syad"><span style="font-weight:400;font-style:normal;text-decoration:none">This competitive fellowship award is provided by </span>the Ministry of Human Resource Development, Government of India.</td>
-            <td class="tg-4f0n">2016 - 2018<br></td>
-          </tr>
-          <tr>
-            <td class="tg-syad">Post-matric scholarship</td>
-            <td class="tg-syad">This competitive sponsorship award is provided by the Government of Andhra Pradesh, India.</td>
-            <td class="tg-4f0n">2012 - 2016<br></td>
-          </tr>
-        </tbody>
+      <div class="row">    
+        <table class="tg" style="border-collapse: collapse; width: 100%;">
+          <thead>
+            <tr style="border-bottom: 2px solid #1af07d;border-top: 2px solid rgb(255, 255, 255);">
+              <th style="border: none; padding: 8px; text-align: left;"><span style="font-weight: bold; color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Name of award</span></th>
+              <th style="border: none; padding: 8px; text-align: left;"><span style="font-weight: bold; color: #1af07d; font-style: normal; text-decoration: none;">Description</span></th>
+              <th style="border: none; padding: 8px; text-align: left;"><span style="font-weight: bold; color: #1af07d; font-style: normal; text-decoration: none;">Year</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Naik and Rastogi Excellence in Ph. D. Thesis Award</span></td>
+              <td style="border: none; padding: 8px;">This prestigious award is given to Ph.D. Candidates for outstanding research carried out as part of their doctoral work at IIT Bombay.</td>
+              <td style="border: none; padding: 8px;">August 2024</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">IEEE Mikio Takagi Student Prize (MTStP)</span></td>
+              <td style="border: none; padding: 8px;">This prestigious award is given to a student who has presented an outstanding paper at the IEEE Geoscience and Remote Sensing Symposium (IGARSS).</td>
+              <td style="border: none; padding: 8px;">July 2022</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">IEEE GRSS Travel Grant</span></td>
+              <td style="border: none; padding: 8px;">This grant is awarded by IEEE GRSS society to support the travel for participating in the IEEE Geoscience and Remote Sensing Symposium (IGARSS).</td>
+              <td style="border: none; padding: 8px;">July 2022</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Visiting scholar Fellowship</span></td>
+              <td style="border: none; padding: 8px;">This competitive fellowship award is provided by the University of Massachusetts Amherst,</a> United States.</td>
+              <td style="border: none; padding: 8px;">Jan 2022 - Dec 2023</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Fulbright-Nehru Doctoral Research Fellowship</span></td>
+              <td style="border: none; padding: 8px;">This competitive fellowship award is provided by United States – India Educational Foundation (USIEF).</td>
+              <td style="border: none; padding: 8px;">2022</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Earth Observation Fellowship</span></td>
+              <td style="border: none; padding: 8px;">This competitive fellowship award is provided by the <a href="https://www.cropin.com/">CropIn Technology Solutions Pvt. Ltd.</a> India.</td>
+              <td style="border: none; padding: 8px;">July 2021 - Dec 2021</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Shortlisted as EO-browser Custom script contest 2019</span></td>
+              <td style="border: none; padding: 8px;">Sentinel-hub and the Copernicus EU Earth Observation programme and the European Space Agency organized <a href="https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-1/soil_moisture_estimation/">EO-browser custom script contest</a> for globally scripting hackathon</td>
+              <td style="border: none; padding: 8px;">2020</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Ph.D. Assistantship</span></td>
+              <td style="border: none; padding: 8px;">This competitive fellowship award is provided by the Ministry of Human Resource Development, Government of India.</td>
+              <td style="border: none; padding: 8px;">2019 - 2022</td>
+            </tr>
+            <tr style="border-bottom: 1px solid black;">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">M.Tech Assistantship</span></td>
+              <td style="border: none; padding: 8px;">This competitive fellowship award is provided by the Ministry of Human Resource Development, Government of India.</td>
+              <td style="border: none; padding: 8px;">2016 - 2018</td>
+            </tr>
+            <tr style="border-bottom: 2px solid rgb(255, 255, 255);">
+              <td style="border: none; padding: 8px;"><span style=" color: #1af07d; font-style: normal;font-style: normal; text-decoration: none;">Post-matric scholarship</span></td>
+              <td style="border: none; padding: 8px;">This competitive sponsorship award is provided by the Government of Andhra Pradesh, India.</td>
+              <td style="border: none; padding: 8px;">2012 - 2016</td>
+            </tr>
+          </tbody>
         </table>
-		  
       </div>
+      
 
     </div><!-- End Interests -->
     <!-- ======= Skills  ======= -->
@@ -685,41 +680,20 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Co-author network</h2>
-        <!-- <p>Cited by</p> -->
+        <h2>Co-authors &amp; Metrics </h2>
       </div>
-
       <div class="row">
-        <!-- <div class="col-sm-6"> -->
-
-          <div  id="chord-diagram"></div>
-
-      </div> 
-      <br><br><br>
-      <div class="section-title">
-        <h2>Research Metrics</h2>
-      </div>
-
-      <div class="row">
+          <div class="col-sm-6">
+            <div  id="chord-diagram"></div>
+          </div>
         <div class="col-sm-6 mx-auto">
           <div class="chart-container">
             <canvas id="radar-chart"></canvas>
           </div>
         </div>
-      </div>
+      </div> 
+      <br><br><br>
 
-
-        <!-- <div class="col-sm-6">
-          <canvas id="radar-chart"></canvas> 
-          
-          </div>
-
-         <div class="col-sm-6" >
-          <canvas id="myChart"  align="center" style=" width: 250px; margin: 0px auto;"></canvas>
-        </div>  -->
-
-
-      <br><br><br><br><br><br><br><br><br>
       <div class="section-title">
         <h2>Publications</h2>
       </div>

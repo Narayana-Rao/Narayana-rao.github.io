@@ -29,7 +29,7 @@
   <link href="assets/css/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
@@ -37,6 +37,7 @@
   <link rel="stylesheet" href="assets/css/gallery_style.css">
   <link rel="stylesheet" href="assets/css/spotlight.min.css">
   <link rel="stylesheet" href="assets/css/chord_style.css">
+  <link rel="stylesheet" href="assets/css/radarplot.css">
 
 
 
@@ -696,69 +697,32 @@
       </div> 
       <br><br><br>
       <div class="section-title">
-        <h2>Citations</h2>
-        <!-- <p>Cited by</p> -->
+        <h2>Research Metrics</h2>
       </div>
+
       <div class="row">
-        <div class="col-sm-6">
-          <style type="text/css">
-              .tg  {border-collapse:collapse;border-spacing:0; border: none;}
-              .tg td{border: none !important; font-family:Arial, sans-serif;font-size:14px;overflow:hidden;
-                padding:10px 5px;word-break:normal;}
-              .tg tr{border-top: 1px solid white;border-bottom: 1px solid white;}
-              .tg tr:first-child { border-top: none;}
-              .tg th{border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;
-                overflow:hidden;padding:10px 5px;word-break:normal;}
-              .tg .tg-v9qq{color:#ffffff;text-align:right;vertical-align:top}
-              .tg .tg-ei2i{border-color:#000000;color:#ffffff;text-align:left;vertical-align:top}
-              .tg .tg-7803{color:#ffffff;text-align:left;vertical-align:top}
-              .tg .tg-my85{border-color:#000000;color:#ffffff;text-align:right;vertical-align:top}
-          </style>
-              <table class="tg" align="center" style="table-layout: auto; width: 300px;margin: 0px auto;">
-              <colgroup>
-              <col style="width: 150px">
-              <col style="width: 114px">
-              <col style="width: 118px">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th class="tg-7803"></th>
-                  <th class="tg-v9qq"><span style="color:#1af07d">All</span></th>
-                  <th class="tg-v9qq"><span style="color:#1af07d">Since 2019</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="tg-ei2i">Citations</td>
-                  <td class="tg-my85">307</td>
-                  <td class="tg-my85">306</td>
-                </tr>
-                <tr>
-                  <td class="tg-ei2i">h-index</td>
-                  <td class="tg-my85">9</td>
-                  <td class="tg-my85">9</td>
-                </tr>
-                <tr>
-                  <td class="tg-ei2i">i10-index</td>
-                  <td class="tg-my85">8</td>
-                  <td class="tg-my85">8</td>
-                </tr>
-              </tbody>
-              </table
-            </div>
+        <div class="col-sm-6 mx-auto">
+          <div class="chart-container">
+            <canvas id="radar-chart"></canvas>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- <div class="col-sm-6">
+          <canvas id="radar-chart"></canvas> 
+          
           </div>
 
          <div class="col-sm-6" >
           <canvas id="myChart"  align="center" style=" width: 250px; margin: 0px auto;"></canvas>
-        </div> 
+        </div>  -->
+
+
+      <br><br><br><br><br><br><br><br><br>
+      <div class="section-title">
+        <h2>Publications</h2>
       </div>
-      
-
-
-    <!-- <div id="chord-diagram"></div> -->
-
-      <br><br><br>
-
       <div class="row">
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
@@ -771,6 +735,7 @@
         </div>
       </div>
 
+      
       <div class="row portfolio-container">
         <div class="resume">
         
@@ -1162,12 +1127,12 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script type="text/javascript" src="assets/js/chart.js"></script>
+
 
   <script src="assets/js/particles.js"></script>
   <script src="assets/js/app.js"></script>
-
-
+  <script src="assets/js/radarplot.js"></script>
+  <script src="assets/js/barchart.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

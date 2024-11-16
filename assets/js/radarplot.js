@@ -1,4 +1,42 @@
 Chart.register(ChartDataLabels);
+
+// Create a custom plugin for adding circle grid
+const circleGridPlugin = {
+    id: 'circleGrid',
+    beforeDraw: function(chart) {
+        const ctx = chart.ctx;
+        const scale = chart.scales.r;
+
+        // Get the actual center of the radar chart (not from chartArea)
+        const centerX = scale.xCenter;  // Correct center X based on the scale
+        const centerY = scale.yCenter;  // Correct center Y based on the scale
+
+        const circleRadii = [0.2, 0.4, 0.6, 0.8, 1.0]; // Relative radii (0.2, 0.4, 0.6, 0.8, 1.0)
+        const colors = 'rgba(255, 255, 255, 0.5)'; // Light color for circles
+
+        // Set the circle style
+        ctx.strokeStyle = colors;
+        ctx.lineWidth = 1;
+
+        // Draw the circles
+        circleRadii.forEach(radius => {
+            // Calculate the pixel radius based on the scale and relative radius value
+            const radiusInPixels = scale.getDistanceFromCenterForValue(radius);
+            
+            // Only draw if the radius is valid (greater than 0)
+            if (radiusInPixels > 0) {
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, radiusInPixels, 0, Math.PI * 2);
+                ctx.closePath();
+                ctx.stroke();
+            }
+        });
+    }
+};
+
+// Register the custom plugin
+Chart.register(circleGridPlugin);
+
 var ctx = document.getElementById('radar-chart').getContext('2d');
 
 // Define the maximum value for each axis (for scaling purposes)
@@ -90,7 +128,8 @@ var options = {
                 display: false,
             },
             grid: {
-                color: 'rgba(255, 255, 255, 0.5)'
+                //color: 'rgba(255, 255, 255, 0.5)'
+                color: 'rgba(255, 255, 255, 0)'
             },
             angleLines: {
                 display: true,
@@ -152,13 +191,8 @@ var options = {
                 var actualValue = rawData[label];
                 return actualValue;
             },
-            // color: function(context) {
-            //     // Get the color of the point
-            //     return context.chart.data.datasets[context.datasetIndex].backgroundColor[context.dataIndex];
-            // },
 
             color: function(context) {
-                // Return fixed color from a predefined color array
                 var pointColors = [
                     'rgba(255, 99, 132, 1)', 
                     'rgba(54, 162, 235, 1)', 
@@ -177,8 +211,6 @@ var options = {
             align: 'end',
             anchor: 'center',
             offset:4
-            // X:-10,
-            // Y:4
         }
     }
 };

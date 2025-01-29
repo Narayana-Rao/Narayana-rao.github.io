@@ -41,7 +41,7 @@ var ctx = document.getElementById('radar-chart').getContext('2d');
 
 // Define the maximum value for each axis (for scaling purposes)
 var maxValues = {
-    'Citations': 400,
+    'Citations': 450,
     'h-index': 15,
     'i10-index': 15,
     'Journal articles': 20,
@@ -55,16 +55,16 @@ var maxValues = {
 
 // Sample data before scaling
 var rawData = {
-    'Citations': 320,
+    'Citations': 354,
     'h-index': 9,
-    'i10-index': 8,
+    'i10-index': 9,
     'Journal articles': 12,
-    'Conference articles': 22,
+    'Conference articles': 23,
     'Conference abstracts': 16,
     'Book chapters': 1,
-    'Preprints': 2,
-    'Co-authors': 42,
-    'Co-institutions': 17
+    'Preprints': 3,
+    'Co-authors': 43,
+    'Co-institutions': 18
 };
 
 // Function to scale the data based on the max value for each axis

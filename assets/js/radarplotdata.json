@@ -1,0 +1,26 @@
+{
+    "maxValues": {
+        "Citations": 470,
+        "h-index": 15,
+        "i10-index": 15,
+        "Journal articles": 20,
+        "Conference articles": 30,
+        "Conference abstracts": 30,
+        "Book chapters": 5,
+        "Preprints": 5,
+        "Co-authors": 70,
+        "Co-institutions": 30
+    },
+    "rawData": {
+        "Citations": 376,
+        "h-index": 10,
+        "i10-index": 10,
+        "Journal articles": 12,
+        "Conference articles": 23,
+        "Conference abstracts": 16,
+        "Book chapters": 1,
+        "Preprints": 3,
+        "Co-authors": 43,
+        "Co-institutions": 18
+    }
+}

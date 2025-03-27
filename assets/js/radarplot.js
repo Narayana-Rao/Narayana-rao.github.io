@@ -39,185 +39,94 @@ Chart.register(circleGridPlugin);
 
 var ctx = document.getElementById('radar-chart').getContext('2d');
 
-// Define the maximum value for each axis (for scaling purposes)
-var maxValues = {
-    'Citations': 450,
-    'h-index': 15,
-    'i10-index': 15,
-    'Journal articles': 20,
-    'Conference articles': 30,
-    'Conference abstracts': 30,
-    'Book chapters': 5,
-    'Preprints': 5,
-    'Co-authors': 70,
-    'Co-institutions': 30
-};
-
-// Sample data before scaling
-var rawData = {
-    'Citations': 354,
-    'h-index': 9,
-    'i10-index': 9,
-    'Journal articles': 12,
-    'Conference articles': 23,
-    'Conference abstracts': 16,
-    'Book chapters': 1,
-    'Preprints': 3,
-    'Co-authors': 43,
-    'Co-institutions': 18
-};
-
 // Function to scale the data based on the max value for each axis
 function scaleData(rawData, maxValues) {
-    var scaledData = [];
-    for (var label in rawData) {
-        if (rawData.hasOwnProperty(label)) {
-            scaledData.push(rawData[label] / maxValues[label]);
-        }
-    }
-    return scaledData;
+    return Object.keys(rawData).map(label => rawData[label] / maxValues[label]);
 }
 
-var data = {
-    labels: ['Citations', 'h-index', 'i10-index', 'Journal articles', 'Conference articles', 'Conference abstracts', 'Book chapters', 'Preprints', 'Co-authors', 'Co-institutions'],
-    datasets: [{
-        label: 'Research Metrics',
-        data: scaleData(rawData, maxValues), // Scaled data
-        backgroundColor: 'rgba(0, 255, 0, 0.2)', // Semi-transparent fill
-        borderColor: 'rgba(0, 255, 0, 1)', // Solid border
-        borderWidth: 2,
-        pointBackgroundColor: [
-            'rgba(255, 99, 132, 1)', 
-            'rgba(54, 162, 235, 1)', 
-            'rgba(75, 192, 192, 1)', 
-            'rgba(153, 102, 255, 1)', 
-            'rgba(255, 159, 64, 1)',  
-            'rgba(255, 205, 86, 1)',   
-            'rgba(255, 205, 200, 1)', 
-            'rgba(0, 255, 0, 1)', 
-            'rgba(255, 165, 0, 1)', 
-            'rgba(255, 255, 255, 1)'
-        ],
-        pointBorderColor: '#fff',
-        pointBorderWidth: 2,
-        pointRadius: 7
-    }]
-};
+// Fetch data from JSON and initialize the radar chart
+fetch("/assets/js/radarplotdata.json")
+    .then(response => response.json())
+    .then(data => {
+        let maxValues = data.maxValues;
+        let rawData = data.rawData;
+        // console.log("Loaded Data:", maxValues, rawData);
 
-var options = {
-    responsive: true,
-    scale: {
-        ticks: {
-            beginAtZero: true,
-            stepSize: 0.2,
-            display: false,
-        },
-        gridLines: {
-            color: '#ffffff',
-            lineWidth: 1
-        },
-        angleLines: {
-            color: '#ffffff'
-        }
-    },
-    scales: {
-        r: {
-            min: 0,
-            max: 1,
-            ticks: {
-                display: false,
+        var chartData = {
+            labels: Object.keys(rawData),
+            datasets: [{
+                label: 'Research Metrics',
+                data: scaleData(rawData, maxValues), // Scaled data
+                backgroundColor: 'rgba(0, 255, 0, 0.2)',
+                borderColor: 'rgba(0, 255, 0, 1)',
+                borderWidth: 2,
+                pointBackgroundColor: [
+                    'rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)',
+                    'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)', 'rgba(255, 205, 86, 1)',
+                    'rgba(255, 205, 200, 1)', 'rgba(0, 255, 0, 1)',
+                    'rgba(255, 165, 0, 1)', 'rgba(255, 255, 255, 1)'
+                ],
+                pointBorderColor: '#fff',
+                pointBorderWidth: 2,
+                pointRadius: 7
+            }]
+        };
+
+        var options = {
+            responsive: true,
+            scales: {
+                r: {
+                    min: 0,
+                    max: 1,
+                    ticks: { display: false },
+                    grid: { color: 'rgba(255, 255, 255, 0)' },
+                    angleLines: { display: true, color: 'rgba(255, 255, 255, 0.5)' },
+                    pointLabels: { font: { size: 16, family: 'Arial' }, color: '#FFFFFF' }
+                }
             },
-            grid: {
-                //color: 'rgba(255, 255, 255, 0.5)'
-                color: 'rgba(255, 255, 255, 0)'
-            },
-            angleLines: {
-                display: true,
-                color: 'rgba(255, 255, 255, 0.5)',
-            },
-            pointLabels: {
-                font: {
-                    size: 16,
-                    family: 'Arial',
+            plugins: {
+                legend: {
+                    display: false,
+                    position: 'bottom',
+                    labels: {
+                        font: { size: 16, family: 'Arial' },
+                        color: '#ffffff',
+                        usePointStyle: true,
+                        generateLabels: function(chart) {
+                            return chart.data.labels.map((label, index) => ({
+                                text: `${label}: ${rawData[label]}`,
+                                fillStyle: chart.data.datasets[0].pointBackgroundColor[index],
+                                strokeStyle: '#ffffff',
+                                lineWidth: chart.data.datasets[0].borderWidth
+                            }));
+                        }
+                    }
                 },
-                color: '#FFFFFF',
-            }
-        }
-    },
-    plugins: {
-        legend: {
-            display: false,
-            position: 'bottom',
-            labels: {
-                font: {
-                    size: 16,
-                    family: 'Arial',
+                tooltip: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return `${tooltipItem.label}: ${rawData[tooltipItem.label]}`;
+                        }
+                    }
                 },
-                color: '#ffffff',
-                usePointStyle: true,
-                generateLabels: function(chart) {
-                    return chart.data.labels.map(function(label, index) {
-                        var actualValue = rawData[label];
-                        return {
-                            text: label + ': ' + actualValue,
-                            fillStyle: chart.data.datasets[0].pointBackgroundColor[index],
-                            strokeStyle: '#ffffff',
-                            lineWidth: chart.data.datasets[0].borderWidth
-                        };
-                    });
+                datalabels: {
+                    display: true,
+                    font: { size: 18, family: 'Arial', weight: 'bold' },
+                    formatter: (value, context) => rawData[context.chart.data.labels[context.dataIndex]],
+                    color: (context) => chartData.datasets[0].pointBackgroundColor[context.dataIndex],
+                    align: 'end',
+                    anchor: 'center',
+                    offset: 4
                 }
             }
-        },
-        tooltip: {
-            callbacks: {
-                label: function(tooltipItem) {
-                    var index = tooltipItem.index;
-                    var label = tooltipItem.label;
-                    var actualValue = rawData[label];
-                    return label + ': ' + actualValue;
-                }
-            }
-        },
-        datalabels: {
-            display: true,
-            color: '#FFFFFF',
-            font: {
-                size: 18,
-                family: 'Arial',
-                weight: 'bold'
-            },
-            formatter: function(value, context) {
-                var label = context.chart.data.labels[context.dataIndex];
-                var actualValue = rawData[label];
-                return actualValue;
-            },
+        };
 
-            color: function(context) {
-                var pointColors = [
-                    'rgba(255, 99, 132, 1)', 
-                    'rgba(54, 162, 235, 1)', 
-                    'rgba(75, 192, 192, 1)', 
-                    'rgba(153, 102, 255, 1)', 
-                    'rgba(255, 159, 64, 1)',  
-                    'rgba(255, 205, 86, 1)',   
-                    'rgba(255, 205, 200, 1)', 
-                    'rgba(0, 255, 0, 1)', 
-                    'rgba(255, 165, 0, 1)', 
-                    'rgba(255, 255, 255, 1)'
-                ];
-                return pointColors[context.dataIndex]; // Color based on index
-            },
-
-            align: 'end',
-            anchor: 'center',
-            offset:4
-        }
-    }
-};
-
-// Create the chart
-var chart = new Chart(ctx, {
-    type: 'radar',
-    data: data,
-    options: options
-});
+        // Create the chart
+        new Chart(ctx, {
+            type: 'radar',
+            data: chartData,
+            options: options
+        });
+    })
+    .catch(error => console.error("Error loading the JSON file:", error));

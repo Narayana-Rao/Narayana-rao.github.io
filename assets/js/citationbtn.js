@@ -25,7 +25,7 @@ function copyCitation(format, button) {
       // Use Clipboard API for copying the citation
       navigator.clipboard.writeText(citationText).then(function() {
           // Optionally, you can alert the user that the citation has been copied
-          alert(format.charAt(0).toUpperCase() + format.slice(1) + ' citation copied!');
+          // alert(format.charAt(0).toUpperCase() + format.slice(1).slice(0, -4) + ' citation copied!');
           
           // Change the text of the button that was clicked to "Copied!"
           if (button) {
@@ -33,7 +33,7 @@ function copyCitation(format, button) {
 
               // Reset the button text after 2 seconds
               setTimeout(function() {
-                  button.textContent = '📋 Copy ' + format.charAt(0).toUpperCase() + format.slice(1);
+                  button.textContent = '📋 Copy ' + format.charAt(0).toUpperCase() + format.slice(1).slice(0, -4);
               }, 2000);
           } else {
               console.error('Button not found for format: ' + format);  // Handle the case where the button doesn't exist
@@ -51,7 +51,7 @@ function copyCitation(format, button) {
       document.body.removeChild(tempTextArea);
 
       // Optionally, you can alert the user that the citation has been copied
-      alert(format.charAt(0).toUpperCase() + format.slice(1) + ' citation copied!');
+      // alert(format.charAt(0).toUpperCase() + format.slice(1).slice(0, -4) + ' citation copied!');
 
       // Change the text of the button that was clicked to "Copied!"
       if (button) {
@@ -59,7 +59,7 @@ function copyCitation(format, button) {
 
           // Reset the button text after 2 seconds
           setTimeout(function() {
-              button.textContent = '📋 Copy ' + format.charAt(0).toUpperCase() + format.slice(1);
+              button.textContent = '📋 Copy ' + format.charAt(0).toUpperCase() + format.slice(1).slice(0, -4);
           }, 2000);
       } else {
           console.error('Button not found for format: ' + format);  // Handle the case where the button doesn't exist

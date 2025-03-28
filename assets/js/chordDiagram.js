@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .attr("transform", `translate(${width / 2},${height / 2})`);
 
     d3.json("assets/js/coauthor_data.json").then(data => {
-        console.log(data);
+        // console.log(data);
         const matrix = data.matrix;
         const authors = data.authors;
 

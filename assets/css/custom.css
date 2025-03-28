@@ -38,6 +38,7 @@
   border-color: #1a73f0;
   border-radius:20px;
   color: #1a73f0;
+  vertical-align: middle; 
 }
 
 .cite:hover {

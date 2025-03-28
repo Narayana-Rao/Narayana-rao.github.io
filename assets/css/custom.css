@@ -11,15 +11,16 @@
 .tg .tg-5g3n{background-color:#000000;border-color:inherit;color:#FFF;text-align:center;vertical-align:middle}
 
 
-
+/* Button styles */
 .btn {
   border: 2.5px solid black;
-  /*border-color: #1af07d;*/
-  background-color: #0000;  
+  background-color: transparent;
+  border-radius: 10px;
   color: #04ff00;
   padding: 8px 12px;
   cursor: pointer;
   font-size: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .download {
@@ -32,3 +33,14 @@
   color: white;
 }
 
+
+.cite {
+  border-color: #1a73f0;
+  border-radius:20px;
+  color: #1a73f0;
+}
+
+.cite:hover {
+  background-color: #1a73f0;
+  color: white;
+}

@@ -1,4 +1,4 @@
-function copyCitation(format) {
+function copyCitation(format, button) {
   // Get the citation text based on format
   var citationText = document.getElementById(format).value;
 
@@ -27,10 +27,7 @@ function copyCitation(format) {
           // Optionally, you can alert the user that the citation has been copied
           alert(format.charAt(0).toUpperCase() + format.slice(1) + ' citation copied!');
           
-          // Find the button and change its text to "Copied!"
-          var button = document.getElementById(format + 'Btn');
-          console.log("Button ID: ", format + 'Btn'); // Debugging: check the ID being used
-
+          // Change the text of the button that was clicked to "Copied!"
           if (button) {
               button.textContent = 'Copied!';  // Change text to 'Copied!'
 
@@ -56,10 +53,7 @@ function copyCitation(format) {
       // Optionally, you can alert the user that the citation has been copied
       alert(format.charAt(0).toUpperCase() + format.slice(1) + ' citation copied!');
 
-      // Now, find the correct button and change its text to "Copied!"
-      var button = document.getElementById(format + 'Btn');  // Get the button based on format
-      console.log("Button ID: ", format + 'Btn'); // Debugging: check the ID being used
-
+      // Change the text of the button that was clicked to "Copied!"
       if (button) {
           button.textContent = 'Copied!';  // Change text to 'Copied!'
 

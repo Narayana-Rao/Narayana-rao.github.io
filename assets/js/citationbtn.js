@@ -56,7 +56,7 @@ function copyCitation(format, button) {
       // Change the text of the button that was clicked to "Copied!"
       if (button) {
           button.textContent = 'Copied!';  // Change text to 'Copied!'
-
+        
           // Reset the button text after 2 seconds
           setTimeout(function() {
               button.textContent = '📋 Copy ' + format.charAt(0).toUpperCase() + format.slice(1).slice(0, -4);

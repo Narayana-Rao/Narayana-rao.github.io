@@ -40,7 +40,7 @@ data = {
         "Citations": int(author_details['citedby']),
         "h-index":  int(author_details['hindex']),
         "i10-index": int(author_details['i10index']),
-        "Journal articles": 12,
+        "Journal articles": 13,
         "Conference articles": 23,
         "Conference abstracts": 16,
         "Book chapters": 1,

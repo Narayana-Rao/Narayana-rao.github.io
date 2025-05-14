@@ -1,6 +1,6 @@
 {
     "maxValues": {
-        "Citations": 470,
+        "Citations": 490,
         "h-index": 15,
         "i10-index": 15,
         "Journal articles": 20,
@@ -12,10 +12,10 @@
         "Co-institutions": 30
     },
     "rawData": {
-        "Citations": 376,
+        "Citations": 390,
         "h-index": 10,
         "i10-index": 10,
-        "Journal articles": 12,
+        "Journal articles": 13,
         "Conference articles": 23,
         "Conference abstracts": 16,
         "Book chapters": 1,

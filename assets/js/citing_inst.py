@@ -17,11 +17,12 @@ doi_list = [
     
 ]
 
-##########################################
 
-unique_affiliations = set()
 
+####################################################
 # Step 1: Get all affiliations from all citing works
+####################################################
+unique_affiliations = set()
 for doi in doi_list:
     try:
         resp = requests.get(f"https://api.openalex.org/works/doi:{doi}").json()
@@ -45,7 +46,10 @@ for doi in doi_list:
     except Exception as e:
         print(f"Error processing {doi}: {e}")
 
+#######################################
 # Step 2: Geocode unique affiliations
+#######################################
+
 geocoded_data = []
 
 for name, country in unique_affiliations:
@@ -75,14 +79,14 @@ for name, country in unique_affiliations:
         })
         print(f"Geocode failed for: {query}")
     time.sleep(1)
-
-# Step 3: Save to CSV
+######################################
+# Step 3: export data
+######################################
 with open("all_citing_inst.csv", "w", newline='', encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=["affiliation", "country_code", "latitude", "longitude"])
     writer.writeheader()
     writer.writerows(geocoded_data)
 
-# Step 4: Save to GeoJSON
 features = []
 for entry in geocoded_data:
     features.append({
@@ -106,3 +110,4 @@ with open("all_citing_inst.geojson", "w", encoding="utf-8") as f:
     json.dump(geojson, f, indent=2)
 
 print("Files created: all_citing_inst.csv and all_citing_inst.geojson")
+###########################################################################

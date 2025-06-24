@@ -35,10 +35,18 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
   <link rel="stylesheet" href="assets/css/map_.css">
+  <link rel="stylesheet" href="assets/css/citations_map.css">
   <link rel="stylesheet" href="assets/css/gallery_style.css">
   <link rel="stylesheet" href="assets/css/spotlight.min.css">
   <link rel="stylesheet" href="assets/css/chord_style.css">
   <link rel="stylesheet" href="assets/css/radarplot.css">
+
+
+<!-- marker cluster -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.css" />
+<link   rel="stylesheet"   href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 
 
 
@@ -1161,7 +1169,14 @@ doi.org/10.3390/s25103065" target="_blank">10.3390/s25103065</a> </span>
       <div class="row">
         <div id="map"></div>
       </div> 
-      
+      <br>
+      <div class="section-title">
+        <h2>CITED BY</h2>
+      </div>
+      <div class="row">
+        <div id="cite_map"></div>
+      </div> 
+
       <!-- <div class="row" align=center>
       <div id="globeViz" align=center></div>
 
@@ -1289,69 +1304,6 @@ doi.org/10.3390/s25103065" target="_blank">10.3390/s25103065</a> </span>
   </section>
   <!-- end gallery Section -->
 
-  <!-- ======= Contact Section ======= -->
-  <!--<section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>MRSLab, CSRE, IIT Bombay, India. 400076</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-
-        <a href="https://scholar.google.com/citations?user=-OryAUsAAAAJ&hl=en" target="_blank"class="linkedin">
-              <i><img src="assets/img/icons/gsw.png" width=20px></i></a>
-        <a href="https://www.researchgate.net/profile/Narayana-Bhogapurapu"  target="_blank" class="linkedin">
-              <i><img src="assets/img/icons/rgw.png" width=20px></i></a>
-        <a href="https://github.com/Narayana-Rao" target="_blank" class="github">
-              <i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/narayanarao-bhogapurapu-072117106/" target="_blank" class="linkedin">
-              <i class="bi bi-linkedin"></i></a>
-              <a href="https://www.linkedin.com/in/narayanarao-bhogapurapu-072117106/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="https://twitter.com/n_bhogapurapu" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.facebook.com/narayana.bhogapurapu" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/narayana_bhogapurapu/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-               <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> 
-              </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p><a href="mailto:bnarayanarao@iitb.ac.in">bnarayanarao@iitb.ac.in</a><br>
-              <a href="mailto:narayanarao.bhogapurapu@gmail.com">narayanarao.bhogapurapu@gmail.com</a></p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p><a href="tel:+912225764654">+91 222-576-4654</a></p>
-          </div>
-        </div>
-
-      
-      </div>
-
-    </div>
-  </section> --><!-- End Contact Section -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1377,7 +1329,14 @@ doi.org/10.3390/s25103065" target="_blank">10.3390/s25103065</a> </span>
 <!-- <script src="assets/js/point.js"></script> -->
 <!-- <script src="assets/js/polygon.js"></script> -->
 <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<script src="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+
 <script src="assets/js/map_.js"></script>
+<script src="assets/js/citations_map.js"></script>
+
 <!-- <script type="text/jsx" src="assets/js/globe.jsx"></script> -->
 
 <div id="modal01" class="w3-modal" onclick="this.style.display='none'">

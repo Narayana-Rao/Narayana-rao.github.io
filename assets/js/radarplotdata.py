@@ -45,7 +45,7 @@ data = {
         "Conference abstracts": 16,
         "Book chapters": 1,
         "Preprints": 3,
-        "Co-authors": 43,
+        "Co-authors": 44,
         "Co-institutions": 18
     }
 }

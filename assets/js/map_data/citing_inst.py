@@ -12,9 +12,28 @@ import json
 
 
 doi_list = [
-    "10.1109/TGRS.2022.3224280",
-    # "10.1016/j.isprsjprs.2021.05.013",
     
+    "10.1016/j.isprsjprs.2021.05.013",
+    "10.1016/j.rse.2022.112900",
+    "10.20944/preprints201911.0393.v1",
+    "10.1016/j.asr.2022.03.019",
+    "10.3390/rs14040934",
+    "10.1080/01431161.2021.1921876",
+    "10.3390/rs13214412",
+    "10.21105/joss.02970",
+    "10.1109/JSTARS.2021.3103911",
+    "10.1007/978-981-13-7067-0_36",
+    "10.1109/TGRS.2022.3224280",
+    
+    "10.1109/InGARSS48198.2020.9358940",
+    "10.1109/InGARSS51564.2021.9792130",
+    "10.1109/IGARSS47720.2021.9554351",
+    "10.1109/IGARSS39084.2020.9323699",
+    "10.1016/j.rsase.2023.101130",
+    "10.1109/IGARSS47720.2021.9553040",
+    "10.1109/IGARSS52108.2023.10281845",
+    "10.1109/IGARSS39084.2020.9324157",
+    "10.1109/InGARSS51564.2021.9791910"
 ]
 
 
@@ -45,7 +64,8 @@ for doi in doi_list:
                         unique_affiliations.add((name, country))
     except Exception as e:
         print(f"Error processing {doi}: {e}")
-
+        
+print(f"Found {len(unique_affiliations)} institues")
 #######################################
 # Step 2: Geocode unique affiliations
 #######################################
@@ -82,7 +102,7 @@ for name, country in unique_affiliations:
 ######################################
 # Step 3: export data
 ######################################
-with open("all_citing_inst.csv", "w", newline='', encoding="utf-8") as f:
+with open("all_citing_inst_update.csv", "w", newline='', encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=["affiliation", "country_code", "latitude", "longitude"])
     writer.writeheader()
     writer.writerows(geocoded_data)
@@ -106,7 +126,7 @@ geojson = {
     "features": features
 }
 
-with open("all_citing_inst.geojson", "w", encoding="utf-8") as f:
+with open("all_citing_inst_update.geojson", "w", encoding="utf-8") as f:
     json.dump(geojson, f, indent=2)
 
 print("Files created: all_citing_inst.csv and all_citing_inst.geojson")

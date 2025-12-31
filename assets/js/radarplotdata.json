@@ -8,7 +8,7 @@
         "Conference abstracts": 30,
         "Book chapters": 5,
         "Preprints": 5,
-        "Co-authors": 70,
+        "Co-authors": 90,
         "Co-institutions": 30
     },
     "rawData": {
@@ -20,7 +20,7 @@
         "Conference abstracts": 17,
         "Book chapters": 1,
         "Preprints": 3,
-        "Co-authors": 44,
+        "Co-authors": 58,
         "Co-institutions": 18
     }
 }

@@ -25,15 +25,12 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link media="screen" href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <link rel="stylesheet" href="assets/css/style.css" media="screen" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <link rel="stylesheet" href="assets/css/cdn/w3.css"  />
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  
+  
   <link rel="stylesheet" href="assets/css/map_.css">
   <link rel="stylesheet" href="assets/css/citations_map.css">
   <link rel="stylesheet" href="assets/css/gallery_style.css">
@@ -42,26 +39,22 @@
   <link rel="stylesheet" href="assets/css/radarplot.css">
 
 
-<!-- marker cluster -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.css" />
-<link   rel="stylesheet"   href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <!-- marker cluster -->
+  <link rel="stylesheet" href="assets/css/cdn/leaflet.css" />
+  <link rel="stylesheet" href="assets/css/cdn/MarkerCluster.css" />
+  <link rel="stylesheet" href="assets/css/cdn/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="assets/css/cdn/Control.FullScreen.css" />
+  <link rel="stylesheet" href="assets/css/cdn/Control.Geocoder.css" />
 
 
-  <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.21.8/babel.js"></script>
 
-  <script src="https://unpkg.com/three@0.152.2/build/three.js"></script>
-  <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-
-  <script src="https://unpkg.com/react-globe.gl@2.24.1/dist/react-globe.gl.min.js"></script>
-  <!--<script src="../../dist/react-globe.gl.js"></script>-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/cdn/chart.js"></script>
+  <script src="assets/js/cdn/chartjs-plugin-datalabels"></script>
+  
+  <script src="assets/js/cdn/jquery-3.6.0.min.js"></script>
   <script src="assets/js/spotlight.min.js"></script>
 
-  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="assets/js/cdn/d3.v6.min.js"></script>
   <script src="assets/js/chordDiagram.js" defer></script> 
 
 </head>
@@ -1481,33 +1474,14 @@ doi.org/10.3390/s25103065" target="_blank">10.3390/s25103065</a> </span>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<!-- <script src="assets/js/line.js"></script> -->
-<!-- <script src="assets/js/point.js"></script> -->
-<!-- <script src="assets/js/polygon.js"></script> -->
-<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-<script src="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.js"></script>
-<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="assets/js/cdn/leaflet.js"></script>
+  <script src="assets/js/cdn/Control.Geocoder.js"></script>
+  <script src="assets/js/cdn/Control.FullScreen.js"></script>
+  <script src="assets/js/cdn/leaflet.markercluster.js"></script>
 
+  <script src="assets/js/map_.js"></script>
+  <script src="assets/js/citations_map.js"></script>
 
-<script src="assets/js/map_.js"></script>
-<script src="assets/js/citations_map.js"></script>
-
-<!-- <script type="text/jsx" src="assets/js/globe.jsx"></script> -->
-
-<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-  <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style="width:100% ">
-  </div>
-</div>
-<script>
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-}
-</script>
 </body>
 
 </html>

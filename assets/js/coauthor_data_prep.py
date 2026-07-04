@@ -2,66 +2,61 @@ import bibtexparser
 import pandas as pd
 import json
 from itertools import combinations
+import re
 
-# Function to process BibTeX file and generate co-author matrix
-def process_bibtex(bibtex_file):
-    # Parse the BibTeX file
-    with open(bibtex_file) as bibtex_file:
-        bib_database = bibtexparser.load(bibtex_file)
+def process_bibtex(bibtex_filepath):
+    with open(bibtex_filepath, 'r', encoding='utf-8') as f:
+        bib_database = bibtexparser.load(f)
     
-    # Extract all authors from the entries
     all_authors = []
     author_count = {}
     
     for entry in bib_database.entries:
         if 'author' in entry:
-            authors = [author.strip() for author in entry['author'].replace('\n', ' ').split(' and ')]
-            all_authors.append(authors)
+            raw_authors = entry['author'].replace('\n', ' ').replace('\t', ' ').split(' and ')
             
-            # Update author count
-            for author in authors:
-                if author in author_count:
-                    author_count[author] += 1
-                else:
-                    author_count[author] = 1
+            cleaned_authors = []
+            for author in raw_authors:
+                name = re.sub(r'\s+', ' ', author).strip()
+                if name:
+                    cleaned_authors.append(name)
+            
+            if len(cleaned_authors) > 0:
+                all_authors.append(cleaned_authors)
+                
+                # Update author count
+                for author in cleaned_authors:
+                    author_count[author] = author_count.get(author, 0) + 1
+    unique_authors = sorted(
+        author_count.keys(), 
+        key=lambda author: (-author_count[author], author)
+    )
     
-    # Create a list of all unique authors sorted by their article count (descending)
-    unique_authors = sorted(author_count.keys(), key=lambda x: author_count[x], reverse=True)
-    
-    # Initialize a co-authorship matrix
+    sorted_author_counts = {author: author_count[author] for author in unique_authors}
     co_author_matrix = pd.DataFrame(0, index=unique_authors, columns=unique_authors)
-
-    # Fill the co-authorship matrix
     for authors in all_authors:
-        for author1, author2 in combinations(authors, 2):
-            co_author_matrix.loc[author1, author2] += 1
-            co_author_matrix.loc[author2, author1] += 1
-    
-    # Convert matrix to a list of lists
+        if len(authors) > 1:
+            for author1, author2 in combinations(authors, 2):
+                co_author_matrix.loc[author1, author2] += 1
+                co_author_matrix.loc[author2, author1] += 1
     matrix_list = co_author_matrix.values.tolist()
-
-    # Prepare data for JSON output
     data = {
         "matrix": matrix_list,
         "authors": unique_authors,
-        "author_counts": author_count  # Optionally include author counts in output
+        "author_counts": sorted_author_counts  
     }
     
     return data
 
-# Function to save the data into a JSON file
 def save_to_json(data, output_file):
-    with open(output_file, 'w') as f:
+    with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4)
 
-# Example usage
-bibtex_file = 'articles.bib'
-output_file = 'coauthor_data.json'
+if __name__ == "__main__":
 
-# Process the BibTeX file and generate the co-author network
-data = process_bibtex(bibtex_file)
+    bibtex_file = 'articles.bib'
+    output_file = 'coauthor_data.json'
+    data = process_bibtex(bibtex_file)
+    save_to_json(data, output_file)
 
-# Save the data to a JSON file
-save_to_json(data, output_file)
-
-print(f"Data has been successfully saved to {output_file}")
+    print(f"Data has been successfully saved to {output_file}")

@@ -29,23 +29,23 @@ data = {
         "h-index": math.ceil((int(author_details['hindex'])+5) / 5) * 5,
         "i10-index": math.ceil((int(author_details['i10index'])+5) / 5) * 5,
         "Journal articles": 20,
-        "Conference articles": 30,
+        "Conference articles": 35,
         "Conference abstracts": 30,
         "Book chapters": 5,
         "Preprints": 5,
-        "Co-authors": 70,
+        "Co-authors": 90,
         "Co-institutions": 30
     },
     "rawData": {
         "Citations": int(author_details['citedby']),
         "h-index":  int(author_details['hindex']),
         "i10-index": int(author_details['i10index']),
-        "Journal articles": 13,
-        "Conference articles": 23,
-        "Conference abstracts": 16,
+        "Journal articles": 16,
+        "Conference articles": 28,
+        "Conference abstracts": 18,
         "Book chapters": 1,
         "Preprints": 3,
-        "Co-authors": 44,
+        "Co-authors": 59,
         "Co-institutions": 18
     }
 }

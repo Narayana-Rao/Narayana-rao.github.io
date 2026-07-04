@@ -40,7 +40,7 @@ var markers = L.markerClusterGroup({
     maxClusterRadius: 25  // default is 80; lower = tighter clusters
 });
 
-$.getJSON("assets/js/map_data/all_citing_inst.geojson", function(data) {
+$.getJSON("assets/js/map_data/inst_update.geojson", function(data) {
     var geoJsonLayer = L.geoJSON(data, {
         pointToLayer: function(feature, latlng) {
             if (!latlng || (latlng.lat === 0 && latlng.lng === 0)) {

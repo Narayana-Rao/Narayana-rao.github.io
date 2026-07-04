@@ -54,8 +54,9 @@
   <script src="assets/js/cdn/jquery-3.6.0.min.js"></script>
   <script src="assets/js/spotlight.min.js"></script>
 
-  <script src="assets/js/cdn/d3.v6.min.js"></script>
+  <script src="assets/js/cdn/d3.v7.min.js"></script>
   <script src="assets/js/chordDiagram.js" defer></script> 
+  <script type="text/javascript" src="assets/js/network-graph.js"></script> 
 
 </head>
 
@@ -819,6 +820,52 @@
         </div>
       </div> 
       <br><br><br>
+      
+      <!-- Row 2: Full-Width Interconnected Network Graph -->
+      <!-- <div class="row">
+        <div class="col-md-12">
+          <div class="network-container" style="width: 100%; display: flex; justify-content: center;">
+            <div id="network-graph"></div>
+          </div>
+        </div>
+      </div>
+
+      <br><br><br> -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Wrap the graph and buttons together -->
+          <div id="network-container" style="position: relative; width: 100%; background: #1a1a1a65;">
+            
+            <!-- Fullscreen Toggle Button (Maps style) -->
+            <button id="fullscreen-btn" style="
+              position: absolute; 
+              top: 15px; 
+              right: 15px; 
+              z-index: 1000; 
+              background: rgba(255, 255, 255, 0.2); 
+              color: white; 
+              border: 1px solid rgba(255, 255, 255, 0.4); 
+              padding: 8px 12px; 
+              border-radius: 4px; 
+              cursor: pointer;
+              font-family: sans-serif;
+              font-size: 13px;
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              transition: background 0.2s;">
+              <span>Full screen</span> 🗖
+            </button>
+
+            <!-- Your existing graph container -->
+            <div id="network-graph" style="width: 100%; height: 500px; overflow: hidden;"></div>
+            
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+
 
       <div class="section-title">
         <h2>Publications</h2>

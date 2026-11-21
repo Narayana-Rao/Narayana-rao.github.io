@@ -7518,6 +7518,2008 @@
           48.2654976
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Earth Observation Research Center",
+        "country_code": "JP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.1215,
+          36.0505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Julius K\u00fchn-Institut",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0657,
+          52.3994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Institut de physique du globe de Paris",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3568,
+          48.8473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "IBM (India)",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5946,
+          12.9716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Curtin University",
+        "country_code": "AU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8934,
+          -32.0033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Central Institute for Cotton Research",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.0882,
+          21.1458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "National Academy of Sciences of Armenia",
+        "country_code": "AM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.5152,
+          40.1872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Nansen Environmental and Remote Sensing Center",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3221,
+          60.3913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Politecnico di Milano",
+        "country_code": "IT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.227,
+          45.4781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Jiangsu Ocean University",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.22,
+          34.6075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Korea University",
+        "country_code": "KR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.0325,
+          37.5894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "ST Engineering (Singapore)",
+        "country_code": "SG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.852,
+          1.294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Centre National de Recherches M\u00e9t\u00e9orologiques",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4442,
+          43.6047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University of New England",
+        "country_code": "AU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.6575,
+          -30.4852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Consiglio per la ricerca in agricoltura e l\u2019analisi dell\u2019economia agraria",
+        "country_code": "IT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Ministry of Micro, Small and Medium Enterprises",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.209,
+          28.6139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Hongik University",
+        "country_code": "KR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.925,
+          37.5513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Chiang Mai University",
+        "country_code": "TH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.952,
+          18.806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Institute of Industrial Science, The University of Tokyo",
+        "country_code": "JP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.684,
+          35.6586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Tribhuvan University",
+        "country_code": "NP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.2896,
+          27.6812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Agricultural Research Council of South Africa",
+        "country_code": "ZA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2791,
+          -25.7554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universidade Federal do Rio Grande do Norte",
+        "country_code": "BR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.2016,
+          -5.8449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Siddhartha Academy of Higher Education",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.13,
+          16.17
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Gyeongkuk National University",
+        "country_code": "KR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7294,
+          36.5684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Russian Academy of Sciences",
+        "country_code": "RU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.5849,
+          55.7032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "State Key Laboratory of Herbage Improvement and Grassland Agro-ecosystems",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.6603,
+          40.8175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University of Sannio",
+        "country_code": "IT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3878,
+          43.1107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universit\u00e9 Laval",
+        "country_code": "CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.275,
+          46.7784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University of Mysore",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6273,
+          12.3106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Tsinghua Shenzhen International Graduate School",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.9782,
+          22.5851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Institut National Agronomique de Tunisie",
+        "country_code": "TN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1963,
+          36.8493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universidad Nacional de Frontera",
+        "country_code": "PE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.6828,
+          -4.9312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Concordia University",
+        "country_code": "CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5789,
+          45.4973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Space Applications Centre",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5714,
+          23.0225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Aviation Industry Corporation of China (China)",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4074,
+          39.9042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universitat de Lleida",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.62,
+          41.6176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University of Cape Town",
+        "country_code": "ZA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4606,
+          -33.9575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University of Kerala",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9366,
+          8.5241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Manouba University",
+        "country_code": "TN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0594,
+          36.816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universitas Labuhanbatu",
+        "country_code": "ID"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.8251,
+          2.1153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Stephen F. Austin State University",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.6474,
+          31.6218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "National Space Research and Development Agency",
+        "country_code": "NG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3986,
+          9.0765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Vi\u1ec7n Khoa h\u1ecdc s\u1ef1 s\u1ed1ng",
+        "country_code": "VN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8542,
+          21.0285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Instituto Federal do Rio de Janeiro",
+        "country_code": "BR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.0534,
+          -22.8268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Samudra University",
+        "country_code": "ID"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.9622,
+          4.4756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Hokkaido University",
+        "country_code": "JP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.3473,
+          43.0779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Shangdong Agriculture and Engineering University",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.1201,
+          36.6512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "The University of Texas at Dallas",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7502,
+          32.9858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Mitsui Chemicals Crop & Life Solutions, Inc (Japan)",
+        "country_code": "JP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6917,
+          35.6895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Northwest University",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.8744,
+          34.145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Forestry Research Centre",
+        "country_code": "PT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1393,
+          38.7223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University of South Africa",
+        "country_code": "ZA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.1917,
+          -25.7725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University Corporation for Atmospheric Research",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.2705,
+          40.015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Agrotecnio - Centre for Food and Agriculture Research",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.62,
+          41.6176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Humboldt-Universit\u00e4t zu Berlin",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.393,
+          52.517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "European Space Agency",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3086,
+          48.8443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Sriwijaya University",
+        "country_code": "ID"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.6508,
+          -3.2158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Media Innovation Lab",
+        "country_code": "SG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.7764,
+          1.2966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Nanjing University",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.7965,
+          32.0584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University of Madras",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2785,
+          13.0674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Department of Primary Industries and Regional Development",
+        "country_code": "AU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8605,
+          -31.9505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Chandra Shekhar Azad University of Agriculture and Technology",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3071,
+          26.4912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "George Mason University",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3117,
+          38.8315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universit\u00e9 de Toulouse",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4442,
+          43.6047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Acharya Narendra Deva University of Agriculture and Technology",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2154,
+          26.785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Beihang University",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3533,
+          39.9856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Agricultural University of Athens",
+        "country_code": "GR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7042,
+          37.9897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Friedrich Schiller University Jena",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5892,
+          50.9284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Korea Railroad Research Institute",
+        "country_code": "KR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9632,
+          37.3032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Akal University",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.1436,
+          29.9869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Prairie Research Institute",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2434,
+          40.1164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Institut Teknologi dan Sains Padang Lawas Utara",
+        "country_code": "ID"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.7,
+          1.6833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University of Massachusetts System",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0618,
+          42.3542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universit\u00e9 Paris Cit\u00e9",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3364,
+          48.8525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Louisiana State University",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1783,
+          30.4145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "b.geos",
+        "country_code": "AT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3738,
+          48.2082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Chaudhary Charan Singh University",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7064,
+          28.9845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Industrieanlagen Betriebsgesellschaft (Germany)",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4311,
+          48.7758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Institute for Astronomy, Astrophysics, Space Applications and Remote Sensing",
+        "country_code": "GR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8183,
+          37.9745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Ruhrverband (Germany)",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4691,
+          51.4287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universidad Complutense de Madrid",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7297,
+          40.4484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Lower Mississippi-Gulf Water Science Center",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1871,
+          30.4515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Stellenbosch University",
+        "country_code": "ZA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8645,
+          -33.9321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "State Key Laboratory of Earth Surface Processes and Resource Ecology",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3686,
+          39.9631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Angeles University Foundation",
+        "country_code": "PH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.591,
+          15.145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "K. N. Toosi University of Technology",
+        "country_code": "IR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.4147,
+          35.7501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universitat de Val\u00e8ncia",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.359,
+          39.479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Tr\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc Khoa h\u1ecdc v\u00e0 C\u00f4ng ngh\u1ec7 H\u00e0 N\u1ed9i",
+        "country_code": "VN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8037,
+          21.0454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "VTT Technical Research Centre of Finland",
+        "country_code": "FI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9458,
+          60.192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universitas Jember",
+        "country_code": "ID"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.7023,
+          -8.1691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Georgia Southern University",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.7832,
+          32.4218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Birla Institute of Technology and Science - Hyderabad Campus",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.5718,
+          17.5448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Centre for Remote Imaging, Sensing and Processing",
+        "country_code": "SG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.7764,
+          1.2966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Jiangxi University of Water Resources and Electric Power",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8579,
+          28.6829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "D\u00e9partement Traitement de l\u2019Information et Syst\u00e8mes",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3522,
+          48.8566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "United States Geological Survey",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4378,
+          38.9517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Department of Agriculture",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0352,
+          38.8894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "National Institute of Natural Hazards",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4074,
+          39.9042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Tamil Nadu Agricultural University",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9558,
+          11.0168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Leibniz Centre for Agricultural Landscape Research",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4043,
+          52.5194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Adamson University",
+        "country_code": "PH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9852,
+          14.5831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "State Key Laboratory of Severe Weather",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4074,
+          39.9042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Center for Ecological Noosphere Studies",
+        "country_code": "AM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.5152,
+          40.1872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Geological Survey of Finland",
+        "country_code": "FI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9384,
+          60.1699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Embrapa Meio Ambiente",
+        "country_code": "BR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.0863,
+          -22.7391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universidad P\u00fablica de Navarra (UPNA)",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6457,
+          42.8125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Government of Uttar Pradesh",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9462,
+          26.8467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University of Padua",
+        "country_code": "IT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8768,
+          45.4064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Institute of Environmental Engineering",
+        "country_code": "PL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.945,
+          50.0647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "WSL Institute for Snow and Avalanche Research SLF",
+        "country_code": "CH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8433,
+          46.8335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Government of Karnataka",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5946,
+          12.9716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "State Key Laboratory of Geohazard Prevention and Geoenvironment Protection",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0658,
+          30.6574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Sher-e-Kashmir University of Agricultural Sciences and Technology of Kashmir",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.7973,
+          34.0837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "IHE Delft Institute for Water Education",
+        "country_code": "NL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3571,
+          52.0116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Government of India",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.209,
+          28.6139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Tunis El Manar University",
+        "country_code": "TN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.184,
+          36.837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Applied Agricultural Remote Sensing Centre",
+        "country_code": "AU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.6631,
+          -30.5101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universidade do Estado do Rio de Janeiro",
+        "country_code": "BR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2302,
+          -22.9122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Centre Eau Terre Environnement",
+        "country_code": "CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.208,
+          46.8139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Hannam University",
+        "country_code": "KR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.4216,
+          36.3524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universitas Pancasakti Tegal",
+        "country_code": "ID"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.1402,
+          -6.8694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Consejo Superior de Investigaciones Cient\u00edficas",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6896,
+          40.4411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Sup\u00e9lec ONERA DSTA Research Alliance",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1672,
+          48.7096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universitas Islam Negeri Sultan Amai Gorontalo",
+        "country_code": "ID"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.0585,
+          0.5528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Eastern Institute of Technology, Ningbo",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5503,
+          29.8683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "International Institute for Geo-Information Science and Earth Observation",
+        "country_code": "NL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6885,
+          52.2215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Thiagarajar College of Engineering",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.082,
+          9.8824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Marathwada Agricultural University",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7833,
+          19.2667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Institut Teknologi Sepuluh Nopember",
+        "country_code": "ID"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.795,
+          -7.2825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Shanghai Academy of Agricultural Sciences",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4737,
+          31.2304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Southern University of Science and Technology",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.9995,
+          22.6056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "ETH Zurich",
+        "country_code": "CH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5481,
+          47.3763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "B. Borooah College",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.7513,
+          26.1775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universit\u00e9 de Sherbrooke",
+        "country_code": "CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.9281,
+          45.3792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "China University of Mining and Technology - Beijing",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.348,
+          39.9997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Beijing Academy of Agriculture and Forestry Sciences",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.2958,
+          39.9404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Universitas Negeri Padang",
+        "country_code": "ID"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.3543,
+          -0.9492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Wroc\u0142aw University of Science and Technology",
+        "country_code": "PL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0609,
+          51.1104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Ewha Womans University",
+        "country_code": "KR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9458,
+          37.5623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "University of Hawai\u02bbi at M\u0101noa",
+        "country_code": "US"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.8165,
+          21.3007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Ministry of Home Affairs",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.209,
+          28.6139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "Gauhati University",
+        "country_code": "IN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.6601,
+          26.1578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "affiliation": "International Research Center of Big Data for Sustainable Development Goals",
+        "country_code": "CN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3822,
+          40.0031
+        ]
+      }
     }
   ]
 }
